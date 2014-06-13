@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CeiloMeterSuite" duration-ms="87230" started-at="2014-06-13T11:51:59Z" finished-at="2014-06-13T11:53:27Z">
+    <groups>
+    </groups>
+    <test name="Regression1" duration-ms="87230" started-at="2014-06-13T11:51:59Z" finished-at="2014-06-13T11:53:27Z">
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields@6d5bd16]" name="beforeClass" is-config="true" duration-ms="5661" started-at="2014-06-13T17:21:59Z" finished-at="2014-06-13T17:22:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="meterListResponseJSONObjectsExist()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields@6d5bd16]" name="meterListResponseJSONObjectsExist" duration-ms="5011" started-at="2014-06-13T17:22:05Z" finished-at="2014-06-13T17:22:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- meterListResponseJSONObjectsExist -->
+        <test-method status="PASS" signature="validateMeterListResponseJSONFields()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields@6d5bd16]" name="validateMeterListResponseJSONFields" duration-ms="1798" started-at="2014-06-13T17:22:10Z" finished-at="2014-06-13T17:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMeterListResponseJSONFields -->
+        <test-method status="PASS" signature="verifyMeterListFilterWithMeterIdAllJSONFieldsExist()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields@6d5bd16]" name="verifyMeterListFilterWithMeterIdAllJSONFieldsExist" duration-ms="20599" started-at="2014-06-13T17:22:12Z" finished-at="2014-06-13T17:22:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMeterListFilterWithMeterIdAllJSONFieldsExist -->
+        <test-method status="PASS" signature="verifyMeterListFilterWithMeterIdResponseCode()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields@6d5bd16]" name="verifyMeterListFilterWithMeterIdResponseCode" duration-ms="32055" started-at="2014-06-13T17:22:33Z" finished-at="2014-06-13T17:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMeterListFilterWithMeterIdResponseCode -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields@6d5bd16]" name="afterClass" is-config="true" duration-ms="0" started-at="2014-06-13T17:23:05Z" finished-at="2014-06-13T17:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1">
+        <test-method status="PASS" signature="init()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1@5fa5eea1]" name="init" is-config="true" duration-ms="0" started-at="2014-06-13T17:23:05Z" finished-at="2014-06-13T17:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1@5fa5eea1]" name="setUp" is-config="true" duration-ms="4764" started-at="2014-06-13T17:23:05Z" finished-at="2014-06-13T17:23:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidTokenGetMetersResponseCode()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1@5fa5eea1]" name="invalidTokenGetMetersResponseCode" duration-ms="1762" started-at="2014-06-13T17:23:09Z" finished-at="2014-06-13T17:23:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidTokenGetMetersResponseCode -->
+        <test-method status="PASS" signature="verifyGetMetersResponseCode()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1@5fa5eea1]" name="verifyGetMetersResponseCode" duration-ms="5245" started-at="2014-06-13T17:23:11Z" finished-at="2014-06-13T17:23:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetMetersResponseCode -->
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1 -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest@1576f881]" name="beforeClass" is-config="true" duration-ms="5104" started-at="2014-06-13T17:23:16Z" finished-at="2014-06-13T17:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="meterListResponseJSONObjectsExist()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest@1576f881]" name="meterListResponseJSONObjectsExist" duration-ms="3135" started-at="2014-06-13T17:23:22Z" finished-at="2014-06-13T17:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- meterListResponseJSONObjectsExist -->
+        <test-method status="PASS" signature="validateMeterListResponseJSONFields()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest@1576f881]" name="validateMeterListResponseJSONFields" duration-ms="2071" started-at="2014-06-13T17:23:25Z" finished-at="2014-06-13T17:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMeterListResponseJSONFields -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest@1576f881]" name="afterClass" is-config="true" duration-ms="1" started-at="2014-06-13T17:23:27Z" finished-at="2014-06-13T17:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest -->
+    </test> <!-- Regression1 -->
+  </suite> <!-- CeiloMeterSuite -->
+</testng-results>
