@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [CeiloMeterSuite]">
+  <test name="Regression1(failed)">
+    <classes>
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="meterListWithMeterNameVerifyMeterNameTest"/>
+          <include name="meterListWithMeterNameResponseAssertionTest"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test">
+        <methods>
+          <include name="timeStampFilterEqualsToQueryResponseAllJSONfieldsExist"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="timeStampFilterEqualsToQueryResponseAssertion"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListTest -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test -->
+      <class name="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1 -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [CeiloMeterSuite] -->

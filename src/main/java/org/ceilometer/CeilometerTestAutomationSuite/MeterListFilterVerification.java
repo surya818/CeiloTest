@@ -67,7 +67,7 @@ public class MeterListFilterVerification {
 	    }
 	}
 	
-	public List<String> verifyField(List<LinkedHashMap> list ,String field) throws ValueNotFoundException{
+	public List<String> getListOfFields(List<LinkedHashMap> list ,String field) throws ValueNotFoundException{
 		String tmp;
 		List<String> fieldValues=new ArrayList<String>();
 		for(LinkedHashMap map:list){

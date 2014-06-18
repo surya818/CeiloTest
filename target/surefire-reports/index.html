@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-CeiloMeterSuite">
-              <span class="suite-name border-passed">CeiloMeterSuite</span>
+              <span class="suite-name border-failed">CeiloMeterSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">30 methods, 2 failed,  1 skipped,  27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CeiloMeterSuite" class="hide-methods failed suite-CeiloMeterSuite"> (hide)</a> <!-- hide-methods failed suite-CeiloMeterSuite -->
+                      <a href="#" panel-name="suite-CeiloMeterSuite" class="show-methods failed suite-CeiloMeterSuite"> (show)</a> <!-- show-methods failed suite-CeiloMeterSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-CeiloMeterSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" hash-for-method="meterListWithMeterNameVerifyMeterNameTest">meterListWithMeterNameVerifyMeterNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test" hash-for-method="timeStampFilterEqualsToQueryResponseAssertion">timeStampFilterEqualsToQueryResponseAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CeiloMeterSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CeiloMeterSuite" class="hide-methods skipped suite-CeiloMeterSuite"> (hide)</a> <!-- hide-methods skipped suite-CeiloMeterSuite -->
+                      <a href="#" panel-name="suite-CeiloMeterSuite" class="show-methods skipped suite-CeiloMeterSuite"> (show)</a> <!-- show-methods skipped suite-CeiloMeterSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-CeiloMeterSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test" hash-for-method="timeStampFilterEqualsToQueryResponseAllJSONfieldsExist">timeStampFilterEqualsToQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CeiloMeterSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +134,12 @@
                     <div class="method-list-content passed suite-CeiloMeterSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1" hash-for-method="invalidTokenGetMetersResponseCode">invalidTokenGetMetersResponseCode</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest" hash-for-method="invalidTokenGetMetersResponseCode">invalidTokenGetMetersResponseCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" hash-for-method="meterListResponseJSONObjectsExist">meterListResponseJSONObjectsExist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -111,12 +149,102 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" hash-for-method="meterListResponseJSONObjectsExist">meterListResponseJSONObjectsExist</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" hash-for-method="meterListWithMeterNameAllJSONFieldsExistTest">meterListWithMeterNameAllJSONFieldsExistTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" hash-for-method="validateMeterListResponseJSONFields">validateMeterListResponseJSONFields</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" hash-for-method="meterListWithMeterNameResponseAssertionTest">meterListWithMeterNameResponseAssertionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" hash-for-method="projectIdFilterQueryResponseAllJSONfieldsExist">projectIdFilterQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" hash-for-method="projectIdFilterQueryTestResponseAssertionTest">projectIdFilterQueryTestResponseAssertionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" hash-for-method="projectIdFilterQueryVerifyProjectIdValue">projectIdFilterQueryVerifyProjectIdValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" hash-for-method="serviceIdFilterQueryResponseAllJSONfieldsExist">serviceIdFilterQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" hash-for-method="serviceIdFilterQueryResponseAssertionTest">serviceIdFilterQueryResponseAssertionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" hash-for-method="serviceIdFilterQueryResponseVerifyserviceIdValue">serviceIdFilterQueryResponseVerifyserviceIdValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test" hash-for-method="timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist">timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test" hash-for-method="timeStampFilterGreaterThanOrEqualToQueryResponseAssertion">timeStampFilterGreaterThanOrEqualToQueryResponseAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test" hash-for-method="timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist">timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test" hash-for-method="timeStampFilterGreaterThanQueryResponseAssertion">timeStampFilterGreaterThanQueryResponseAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test" hash-for-method="timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist">timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test" hash-for-method="timeStampFilterLessThanOrEqualToQueryResponseAssertion">timeStampFilterLessThanOrEqualToQueryResponseAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test" hash-for-method="timeStampFilterLessThanQueryResponseAllJSONfieldsExist">timeStampFilterLessThanQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test" hash-for-method="timeStampFilterLessThanQueryResponseAssertion">timeStampFilterLessThanQueryResponseAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" hash-for-method="userIdFilterQueryResponseAllJSONfieldsExist">userIdFilterQueryResponseAllJSONfieldsExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" hash-for-method="userIdFilterQueryResponseAssertionTest">userIdFilterQueryResponseAssertionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" hash-for-method="userIdFilterQueryVerifyuserIdValue">userIdFilterQueryVerifyuserIdValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" hash-for-method="validateMeterListResponseJSONFields">validateMeterListResponseJSONFields</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -126,17 +254,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1" hash-for-method="verifyGetMetersResponseCode">verifyGetMetersResponseCode</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest" hash-for-method="verifyGetMetersResponseCode">verifyGetMetersResponseCode</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" hash-for-method="verifyMeterListFilterWithMeterIdAllJSONFieldsExist">verifyMeterListFilterWithMeterIdAllJSONFieldsExist</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" hash-for-method="verifyMeterListFilterWithMeterIdAllJSONFieldsExist">verifyMeterListFilterWithMeterIdAllJSONFieldsExist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" hash-for-method="verifyMeterListFilterWithMeterIdResponseCode">verifyMeterListFilterWithMeterIdResponseCode</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-CeiloMeterSuite" title="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" hash-for-method="verifyMeterListFilterWithMeterIdResponseCode">verifyMeterListFilterWithMeterIdResponseCode</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-CeiloMeterSuite -->
@@ -151,54 +279,73 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CeiloMeterSuite" class="panel CeiloMeterSuite">
-          <div class="suite-CeiloMeterSuite-class-passed">
+          <div class="suite-CeiloMeterSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="meterListResponseJSONObjectsExist">
-                  </a> <!-- meterListResponseJSONObjectsExist -->
-                  <span class="method-name">meterListResponseJSONObjectsExist</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateMeterListResponseJSONFields">
-                  </a> <!-- validateMeterListResponseJSONFields -->
-                  <span class="method-name">validateMeterListResponseJSONFields</span>
+                  <a name="meterListWithMeterNameVerifyMeterNameTest">
+                  </a> <!-- meterListWithMeterNameVerifyMeterNameTest -->
+                  <span class="method-name">meterListWithMeterNameVerifyMeterNameTest</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest.meterListWithMeterNameVerifyMeterNameTest(MeterListWithMeterNameTest.java:99)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CeiloMeterSuite-class-passed -->
-          <div class="suite-CeiloMeterSuite-class-passed">
+          </div> <!-- suite-CeiloMeterSuite-class-failed -->
+          <div class="suite-CeiloMeterSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1</span>
+              <img src="failed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidTokenGetMetersResponseCode">
-                  </a> <!-- invalidTokenGetMetersResponseCode -->
-                  <span class="method-name">invalidTokenGetMetersResponseCode</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyGetMetersResponseCode">
-                  </a> <!-- verifyGetMetersResponseCode -->
-                  <span class="method-name">verifyGetMetersResponseCode</span>
+                  <a name="timeStampFilterEqualsToQueryResponseAssertion">
+                  </a> <!-- timeStampFilterEqualsToQueryResponseAssertion -->
+                  <span class="method-name">timeStampFilterEqualsToQueryResponseAssertion</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;400&gt; but was:&lt;200&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test.timeStampFilterEqualsToQueryResponseAssertion(MeterListFilterQueryByTimestamp_EQ_Test.java:68)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          </div> <!-- suite-CeiloMeterSuite-class-failed -->
+          <div class="suite-CeiloMeterSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterEqualsToQueryResponseAllJSONfieldsExist">
+                  </a> <!-- timeStampFilterEqualsToQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">timeStampFilterEqualsToQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-skipped -->
           <div class="suite-CeiloMeterSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields</span>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -231,6 +378,247 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="meterListWithMeterNameAllJSONFieldsExistTest">
+                  </a> <!-- meterListWithMeterNameAllJSONFieldsExistTest -->
+                  <span class="method-name">meterListWithMeterNameAllJSONFieldsExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="meterListWithMeterNameResponseAssertionTest">
+                  </a> <!-- meterListWithMeterNameResponseAssertionTest -->
+                  <span class="method-name">meterListWithMeterNameResponseAssertionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist">
+                  </a> <!-- timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterLessThanOrEqualToQueryResponseAssertion">
+                  </a> <!-- timeStampFilterLessThanOrEqualToQueryResponseAssertion -->
+                  <span class="method-name">timeStampFilterLessThanOrEqualToQueryResponseAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidTokenGetMetersResponseCode">
+                  </a> <!-- invalidTokenGetMetersResponseCode -->
+                  <span class="method-name">invalidTokenGetMetersResponseCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGetMetersResponseCode">
+                  </a> <!-- verifyGetMetersResponseCode -->
+                  <span class="method-name">verifyGetMetersResponseCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userIdFilterQueryResponseAllJSONfieldsExist">
+                  </a> <!-- userIdFilterQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">userIdFilterQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userIdFilterQueryResponseAssertionTest">
+                  </a> <!-- userIdFilterQueryResponseAssertionTest -->
+                  <span class="method-name">userIdFilterQueryResponseAssertionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userIdFilterQueryVerifyuserIdValue">
+                  </a> <!-- userIdFilterQueryVerifyuserIdValue -->
+                  <span class="method-name">userIdFilterQueryVerifyuserIdValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterLessThanQueryResponseAllJSONfieldsExist">
+                  </a> <!-- timeStampFilterLessThanQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">timeStampFilterLessThanQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterLessThanQueryResponseAssertion">
+                  </a> <!-- timeStampFilterLessThanQueryResponseAssertion -->
+                  <span class="method-name">timeStampFilterLessThanQueryResponseAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="projectIdFilterQueryResponseAllJSONfieldsExist">
+                  </a> <!-- projectIdFilterQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">projectIdFilterQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="projectIdFilterQueryTestResponseAssertionTest">
+                  </a> <!-- projectIdFilterQueryTestResponseAssertionTest -->
+                  <span class="method-name">projectIdFilterQueryTestResponseAssertionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="projectIdFilterQueryVerifyProjectIdValue">
+                  </a> <!-- projectIdFilterQueryVerifyProjectIdValue -->
+                  <span class="method-name">projectIdFilterQueryVerifyProjectIdValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="meterListResponseJSONObjectsExist">
+                  </a> <!-- meterListResponseJSONObjectsExist -->
+                  <span class="method-name">meterListResponseJSONObjectsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMeterListResponseJSONFields">
+                  </a> <!-- validateMeterListResponseJSONFields -->
+                  <span class="method-name">validateMeterListResponseJSONFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist">
+                  </a> <!-- timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterGreaterThanOrEqualToQueryResponseAssertion">
+                  </a> <!-- timeStampFilterGreaterThanOrEqualToQueryResponseAssertion -->
+                  <span class="method-name">timeStampFilterGreaterThanOrEqualToQueryResponseAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist">
+                  </a> <!-- timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="timeStampFilterGreaterThanQueryResponseAssertion">
+                  </a> <!-- timeStampFilterGreaterThanQueryResponseAssertion -->
+                  <span class="method-name">timeStampFilterGreaterThanQueryResponseAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
+          <div class="suite-CeiloMeterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="serviceIdFilterQueryResponseAllJSONfieldsExist">
+                  </a> <!-- serviceIdFilterQueryResponseAllJSONfieldsExist -->
+                  <span class="method-name">serviceIdFilterQueryResponseAllJSONfieldsExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="serviceIdFilterQueryResponseAssertionTest">
+                  </a> <!-- serviceIdFilterQueryResponseAssertionTest -->
+                  <span class="method-name">serviceIdFilterQueryResponseAssertionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="serviceIdFilterQueryResponseVerifyserviceIdValue">
+                  </a> <!-- serviceIdFilterQueryResponseVerifyserviceIdValue -->
+                  <span class="method-name">serviceIdFilterQueryResponseVerifyserviceIdValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CeiloMeterSuite-class-passed -->
         </div> <!-- panel CeiloMeterSuite -->
         <div panel-name="test-xml-CeiloMeterSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -246,12 +634,23 @@
       &lt;package name=&quot;org.ceilometer.CeilometerTestAutomationSuite&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields&quot;/&gt;
-      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListTest&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterInfo&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterList$1&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterList&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuery&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceID&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterVerification$ValueNotFoundException&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterVerification&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MeterListVerification&quot;/&gt;
@@ -259,6 +658,7 @@
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.MyOwnException&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.TenantManagement&quot;/&gt;
       &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.TestDataDriver&quot;/&gt;
+      &lt;class name=&quot;org.ceilometer.CeilometerTestAutomationSuite.TimeStampGen&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression1 --&gt;
 &lt;/suite&gt; &lt;!-- CeiloMeterSuite --&gt;
@@ -272,7 +672,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression1 (13 classes)</span>
+                <span class="test-name">Regression1 (25 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -298,44 +698,132 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(30);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyMeterListFilterWithMeterIdResponseCode')
-data.setCell(0, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields')
-data.setCell(0, 3, 32055);
+data.setCell(0, 1, 'timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist')
+data.setCell(0, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test')
+data.setCell(0, 3, 23437);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyMeterListFilterWithMeterIdAllJSONFieldsExist')
-data.setCell(1, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields')
-data.setCell(1, 3, 20599);
+data.setCell(1, 1, 'timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist')
+data.setCell(1, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test')
+data.setCell(1, 3, 22936);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyGetMetersResponseCode')
-data.setCell(2, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1')
-data.setCell(2, 3, 5245);
+data.setCell(2, 1, 'timeStampFilterLessThanQueryResponseAllJSONfieldsExist')
+data.setCell(2, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test')
+data.setCell(2, 3, 22777);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'meterListResponseJSONObjectsExist')
-data.setCell(3, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields')
-data.setCell(3, 3, 5011);
+data.setCell(3, 1, 'timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist')
+data.setCell(3, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test')
+data.setCell(3, 3, 22083);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'meterListResponseJSONObjectsExist')
-data.setCell(4, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest')
-data.setCell(4, 3, 3135);
+data.setCell(4, 1, 'timeStampFilterGreaterThanOrEqualToQueryResponseAssertion')
+data.setCell(4, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test')
+data.setCell(4, 3, 16895);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateMeterListResponseJSONFields')
-data.setCell(5, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest')
-data.setCell(5, 3, 2071);
+data.setCell(5, 1, 'timeStampFilterGreaterThanQueryResponseAssertion')
+data.setCell(5, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test')
+data.setCell(5, 3, 16485);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateMeterListResponseJSONFields')
-data.setCell(6, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields')
-data.setCell(6, 3, 1798);
+data.setCell(6, 1, 'timeStampFilterLessThanOrEqualToQueryResponseAssertion')
+data.setCell(6, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test')
+data.setCell(6, 3, 16093);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'invalidTokenGetMetersResponseCode')
-data.setCell(7, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1')
-data.setCell(7, 3, 1762);
+data.setCell(7, 1, 'timeStampFilterLessThanQueryResponseAssertion')
+data.setCell(7, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test')
+data.setCell(7, 3, 15054);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'userIdFilterQueryResponseAllJSONfieldsExist')
+data.setCell(8, 2, 'org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest')
+data.setCell(8, 3, 12809);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'userIdFilterQueryResponseAssertionTest')
+data.setCell(9, 2, 'org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest')
+data.setCell(9, 3, 12273);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyMeterListFilterWithMeterIdResponseCode')
+data.setCell(10, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest')
+data.setCell(10, 3, 12085);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'projectIdFilterQueryTestResponseAssertionTest')
+data.setCell(11, 2, 'org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest')
+data.setCell(11, 3, 11265);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'serviceIdFilterQueryResponseVerifyserviceIdValue')
+data.setCell(12, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1')
+data.setCell(12, 3, 10419);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'serviceIdFilterQueryResponseAssertionTest')
+data.setCell(13, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1')
+data.setCell(13, 3, 10391);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'serviceIdFilterQueryResponseAllJSONfieldsExist')
+data.setCell(14, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1')
+data.setCell(14, 3, 9406);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'meterListWithMeterNameResponseAssertionTest')
+data.setCell(15, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest')
+data.setCell(15, 3, 9030);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'userIdFilterQueryVerifyuserIdValue')
+data.setCell(16, 2, 'org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest')
+data.setCell(16, 3, 8938);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'meterListWithMeterNameAllJSONFieldsExistTest')
+data.setCell(17, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest')
+data.setCell(17, 3, 8891);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'projectIdFilterQueryResponseAllJSONfieldsExist')
+data.setCell(18, 2, 'org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest')
+data.setCell(18, 3, 8670);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyMeterListFilterWithMeterIdAllJSONFieldsExist')
+data.setCell(19, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest')
+data.setCell(19, 3, 8622);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'projectIdFilterQueryVerifyProjectIdValue')
+data.setCell(20, 2, 'org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest')
+data.setCell(20, 3, 7833);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'meterListWithMeterNameVerifyMeterNameTest')
+data.setCell(21, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest')
+data.setCell(21, 3, 6354);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'timeStampFilterEqualsToQueryResponseAssertion')
+data.setCell(22, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test')
+data.setCell(22, 3, 5720);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'invalidTokenGetMetersResponseCode')
+data.setCell(23, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListTest')
+data.setCell(23, 3, 3128);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyGetMetersResponseCode')
+data.setCell(24, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListTest')
+data.setCell(24, 3, 3034);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'validateMeterListResponseJSONFields')
+data.setCell(25, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest')
+data.setCell(25, 3, 2070);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'meterListResponseJSONObjectsExist')
+data.setCell(26, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest')
+data.setCell(26, 3, 1792);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'meterListResponseJSONObjectsExist')
+data.setCell(27, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest')
+data.setCell(27, 3, 1006);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validateMeterListResponseJSONFields')
+data.setCell(28, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest')
+data.setCell(28, 3, 949);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'timeStampFilterEqualsToQueryResponseAllJSONfieldsExist')
+data.setCell(29, 2, 'org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test')
+data.setCell(29, 3, 0);
 window.suiteTableData['CeiloMeterSuite']= { tableData: data, tableDiv: 'times-div-CeiloMeterSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-CeiloMeterSuite">
               </div> <!-- times-div-CeiloMeterSuite -->
             </div> <!-- times-div -->
@@ -361,68 +849,255 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">meterListResponseJSONObjectsExist</span>
-                <span class="method-start">5666 ms</span>
+                <span class="method-name">userIdFilterQueryResponseAssertionTest</span>
+                <span class="method-start">4975 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validateMeterListResponseJSONFields</span>
-                <span class="method-start">10683 ms</span>
+                <span class="method-name">userIdFilterQueryResponseAllJSONfieldsExist</span>
+                <span class="method-start">17256 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyMeterListFilterWithMeterIdAllJSONFieldsExist</span>
-                <span class="method-start">12482 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyMeterListFilterWithMeterIdResponseCode</span>
-                <span class="method-start">33082 ms</span>
+                <span class="method-name">userIdFilterQueryVerifyuserIdValue</span>
+                <span class="method-start">30066 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">65137 ms</span>
+                <span class="method-start">39004 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">39005 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">projectIdFilterQueryTestResponseAssertionTest</span>
+                <span class="method-start">41861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">projectIdFilterQueryResponseAllJSONfieldsExist</span>
+                <span class="method-start">53126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">projectIdFilterQueryVerifyProjectIdValue</span>
+                <span class="method-start">61797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">69631 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">69631 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">serviceIdFilterQueryResponseAllJSONfieldsExist</span>
+                <span class="method-start">73376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">serviceIdFilterQueryResponseAssertionTest</span>
+                <span class="method-start">82783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">serviceIdFilterQueryResponseVerifyserviceIdValue</span>
+                <span class="method-start">93174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">103593 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">103594 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">timeStampFilterEqualsToQueryResponseAssertion</span>
+                <span class="method-start">106401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">112129 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">112130 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist</span>
+                <span class="method-start">114131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterGreaterThanOrEqualToQueryResponseAssertion</span>
+                <span class="method-start">137569 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">154465 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">154465 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist</span>
+                <span class="method-start">157044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterGreaterThanQueryResponseAssertion</span>
+                <span class="method-start">179128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">195613 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">195614 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist</span>
+                <span class="method-start">199363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterLessThanOrEqualToQueryResponseAssertion</span>
+                <span class="method-start">222300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">238394 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">238394 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterLessThanQueryResponseAllJSONfieldsExist</span>
+                <span class="method-start">241505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">timeStampFilterLessThanQueryResponseAssertion</span>
+                <span class="method-start">264283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">279338 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">279338 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyMeterListFilterWithMeterIdResponseCode</span>
+                <span class="method-start">281962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMeterListResponseJSONFields</span>
+                <span class="method-start">294047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">meterListResponseJSONObjectsExist</span>
+                <span class="method-start">296118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMeterListFilterWithMeterIdAllJSONFieldsExist</span>
+                <span class="method-start">297124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">305746 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">65139 ms</span>
+                <span class="method-start">305747 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">65139 ms</span>
+                <span class="method-start">305747 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">invalidTokenGetMetersResponseCode</span>
-                <span class="method-start">69904 ms</span>
+                <span class="method-start">311815 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyGetMetersResponseCode</span>
-                <span class="method-start">71667 ms</span>
+                <span class="method-start">314943 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">76912 ms</span>
+                <span class="method-start">317977 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">meterListResponseJSONObjectsExist</span>
-                <span class="method-start">82017 ms</span>
+                <span class="method-start">321954 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateMeterListResponseJSONFields</span>
-                <span class="method-start">85153 ms</span>
+                <span class="method-start">323746 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">87224 ms</span>
+                <span class="method-start">324696 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">324696 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">meterListWithMeterNameResponseAssertionTest</span>
+                <span class="method-start">326222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">meterListWithMeterNameAllJSONFieldsExistTest</span>
+                <span class="method-start">335253 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">meterListWithMeterNameVerifyMeterNameTest</span>
+                <span class="method-start">344144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">350511 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

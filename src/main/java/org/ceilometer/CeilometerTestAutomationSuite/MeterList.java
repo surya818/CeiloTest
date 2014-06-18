@@ -5,7 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -18,6 +20,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterVerification.ValueNotFoundException;
 import org.json.simple.parser.ContainerFactory;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -29,7 +32,13 @@ import com.sun.jersey.api.client.WebResource;
 
 public class MeterList {
 	
-	public static void main(String[]args) throws FileNotFoundException, IOException, ParseException{
+	public static void main(String[]args) throws FileNotFoundException, IOException, ParseException, ValueNotFoundException{
+		
+		MeterList ml=new MeterList();
+		List l=ml.getMetersResponseList((postToken("10227194874364","glancetest","abc@123")),"/v2/meters/storage.objects.cdn.outgoing.gb?q.field=timestamp&q.op=le&q.value=2014-05-03T12:00:00");
+		MeterListFilterVerification mlfv=new MeterListFilterVerification();
+		System.out.println(mlfv.getListOfFields(l, "timestamp"));
+		System.out.println("Size: "+l.size()  );
 		
 		/*
 		MeterList ml=new MeterList();

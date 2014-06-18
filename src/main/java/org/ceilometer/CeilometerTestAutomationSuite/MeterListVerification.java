@@ -122,7 +122,16 @@ public class MeterListVerification {
 		
 	}
 		
-		
+		public boolean allJSONfieldsExist(String auth,String resourcePath) throws FileNotFoundException, IOException, ParseException{
+			MeterListVerification mlv=new MeterListVerification();
+			List <Boolean> bools=mlv.verifyTenant(auth, resourcePath);
+			for(boolean b:bools){
+				if(b==false){
+					return false;
+				}
+			}
+			return true;
+		}
 	
 	
 
