@@ -50,18 +50,18 @@ public class FilterQueryByUserIDTest {
   public void userIdFilterQueryResponseAssertionTest() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
-		  //System.out.println(meterValues);
+		  ////System.out.println(meterValues);
 		  
 		  List<String> userIdValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "user_id");
-		  //System.out.println(userIdValues);
+		  ////System.out.println(userIdValues);
 		  
 		  int user_id_counter=0;
 		  for(String meter:meterValues){
 			  String query=mlq.genQuery("user_id", "eq", userIdValues.get(user_id_counter++));
-			  //System.out.println("Query: "+query);
+			  ////System.out.println("Query: "+query);
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			  //System.out.println(finalResourcePath);
-			  //System.out.println(ml.getMetersResponseList(at, finalResourcePath));
+			  ////System.out.println(finalResourcePath);
+			  ////System.out.println(ml.getMetersResponseList(at, finalResourcePath));
 			  int num=ml.getMetersStatus(at, finalResourcePath);
 			  Assert.assertEquals(num,200);
 			  
@@ -71,7 +71,7 @@ public class FilterQueryByUserIDTest {
 		 
 	  }
 	  
-	System.out.println("Success: userIdFilterQueryResponseAssertionTest");  
+	//System.out.println("Success: userIdFilterQueryResponseAssertionTest");  
   }
   @Test(dependsOnMethods={"userIdFilterQueryResponseAssertionTest"})
   public void userIdFilterQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
@@ -86,7 +86,7 @@ public class FilterQueryByUserIDTest {
 			  String query=mlq.genQuery("user_id", "eq", userIdValues.get(user_id_counter++));
 			  
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			  //System.out.println("*****???"+finalResourcePath);
+			  ////System.out.println("*****???"+finalResourcePath);
 			  Assert.assertTrue(mlver.allJSONfieldsExist(at, finalResourcePath));
 			  
 			  
@@ -94,7 +94,7 @@ public class FilterQueryByUserIDTest {
 		  
 		 
 	  }
-	  System.out.println("Success: userIdFilterQueryResponseAllJSONfieldsExist");  
+	  //System.out.println("Success: userIdFilterQueryResponseAllJSONfieldsExist");  
   }
   
   @Test(dependsOnMethods={"userIdFilterQueryResponseAssertionTest"})
@@ -111,9 +111,9 @@ public class FilterQueryByUserIDTest {
 			  String query=mlq.genQuery("user_id", "eq", userIdValues.get(user_id_counter));
 			  
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			  //System.out.println(ml.getMetersResponseList(at, finalResourcePath));
+			  ////System.out.println(ml.getMetersResponseList(at, finalResourcePath));
 			  List<String> user_id_vals=ml.getJSONFieldValues(at,finalResourcePath,"user_id");
-			  //System.out.println(user_id_vals);
+			  ////System.out.println(user_id_vals);
 			  Assert.assertTrue(user_id_vals.contains(userIdValues.get(user_id_counter)));
 			  user_id_counter++;
 			  
@@ -125,7 +125,7 @@ public class FilterQueryByUserIDTest {
 	  }
 	  
 	  
-	  System.out.println("Success: userIdFilterQueryVerifyuserIdValue");    
+	  //System.out.println("Success: userIdFilterQueryVerifyuserIdValue");    
 	  
   }
   

@@ -73,7 +73,7 @@ public class MeterListFilterQueryByTimestamp_GT_Test {
 		 
 	  }
 	  
-	System.out.println("Success: timeStampFilterGreaterThanQueryResponseAssertion");  
+	//System.out.println("Success: timeStampFilterGreaterThanQueryResponseAssertion");  
   }
   @Test
   public void timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException, java.text.ParseException{
@@ -93,7 +93,7 @@ public class MeterListFilterQueryByTimestamp_GT_Test {
 			  String query=mlq.genQuery("timestamp", "gt", new_date);
 			  
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			  //System.out.println(ml.getMetersResponseList(at, finalResourcePath));
+			  ////System.out.println(ml.getMetersResponseList(at, finalResourcePath));
 			  int num=ml.getMetersStatus(at, finalResourcePath);
 			  Assert.assertTrue(mlver.allJSONfieldsExist(at, finalResourcePath));
 			  
@@ -103,7 +103,7 @@ public class MeterListFilterQueryByTimestamp_GT_Test {
 		  
 		 
 	  }
-	  System.out.println("Success: timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist");  
+	  //System.out.println("Success: timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist");  
   }
   
  /* @Test
@@ -126,7 +126,7 @@ public class MeterListFilterQueryByTimestamp_GT_Test {
 			  String finalResourcePath="/v2/meters/"+meter+query;
 			  
 			  List<String> timestamp_vals=ml.getJSONFieldValues(at,finalResourcePath,"timestamp");
-			  //System.out.println(timestamp_vals);
+			  ////System.out.println(timestamp_vals);
 			  Assert.assertTrue(timestamp_vals.contains(timeStampValues.get(timeStamp_counter)));
 			  timeStamp_counter++;
 			  
@@ -138,7 +138,7 @@ public class MeterListFilterQueryByTimestamp_GT_Test {
 	  }
 	  
 	  
-	  System.out.println("Success: timeStampFilterGreaterThanQueryResponseVerifyTimeStampValue");    
+	  //System.out.println("Success: timeStampFilterGreaterThanQueryResponseVerifyTimeStampValue");    
 	  
   }
   /*/

@@ -65,7 +65,7 @@ public void setUp() throws IOException{
 				throw new Exception(" Request failed with HTTP error code: "+stat_code);
 			}
 		}
-	System.out.println("Success: verifyGetMetersResponseCode");
+	//System.out.println("Success: verifyGetMetersResponseCode");
 	}
 	
 	@Test
@@ -80,7 +80,7 @@ public void setUp() throws IOException{
 				throw new Exception(" Invalid Token: "+stat_code);
 			}
 		
-			System.out.println("Success: invalidTokenGetMetersResponseCode");
+			//System.out.println("Success: invalidTokenGetMetersResponseCode");
 	}
 	
 	

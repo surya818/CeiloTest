@@ -73,7 +73,7 @@ public class MeterListFilterQueryByTimestamp_LT_Test {
 		 
 	  }
 	  
-	System.out.println("Success: timeStampFilterLessThanQueryResponseAssertion");  
+	//System.out.println("Success: timeStampFilterLessThanQueryResponseAssertion");  
   }
   @Test
   public void timeStampFilterLessThanQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException, java.text.ParseException{
@@ -89,14 +89,14 @@ public class MeterListFilterQueryByTimestamp_LT_Test {
 		  int timeStamp_counter=0;
 		  for(String meter:meterValues){
 			  String curr_date=timeStampValues.get(timeStamp_counter++);
-			  //System.out.println("&&&&&&&&&&: "+curr_date);
+			  ////System.out.println("&&&&&&&&&&: "+curr_date);
 			  String new_date=tsg.changeDateByDays(curr_date,4);
-			  //System.out.println("<<<<<<<<>>>>> "+new_date );
+			  ////System.out.println("<<<<<<<<>>>>> "+new_date );
 			  String query=mlq.genQuery("timestamp", "lt", new_date);
 			  
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			 // System.out.println(ml.getMetersResponse(at, finalResourcePath));
-			  //System.out.println(ml.getMetersResponseList(at, finalResourcePath));
+			 // //System.out.println(ml.getMetersResponse(at, finalResourcePath));
+			  ////System.out.println(ml.getMetersResponseList(at, finalResourcePath));
 			  int num=ml.getMetersStatus(at, finalResourcePath);
 			  Assert.assertTrue(mlver.allJSONfieldsExist(at, finalResourcePath));
 			  
@@ -106,7 +106,7 @@ public class MeterListFilterQueryByTimestamp_LT_Test {
 		  
 		 
 	  }
-	  System.out.println("Success: timeStampFilterLessThanQueryResponseAllJSONfieldsExist");  
+	  //System.out.println("Success: timeStampFilterLessThanQueryResponseAllJSONfieldsExist");  
   }
   
  /* @Test
@@ -129,7 +129,7 @@ public class MeterListFilterQueryByTimestamp_LT_Test {
 			  String finalResourcePath="/v2/meters/"+meter+query;
 			  
 			  List<String> timestamp_vals=ml.getJSONFieldValues(at,finalResourcePath,"timestamp");
-			  //System.out.println(timestamp_vals);
+			  ////System.out.println(timestamp_vals);
 			  Assert.assertTrue(timestamp_vals.contains(timeStampValues.get(timeStamp_counter)));
 			  timeStamp_counter++;
 			  
@@ -141,7 +141,7 @@ public class MeterListFilterQueryByTimestamp_LT_Test {
 	  }
 	  
 	  
-	  System.out.println("Success: timeStampFilterLessThanQueryResponseVerifyTimeStampValue");    
+	  //System.out.println("Success: timeStampFilterLessThanQueryResponseVerifyTimeStampValue");    
 	  
   }
   /*/

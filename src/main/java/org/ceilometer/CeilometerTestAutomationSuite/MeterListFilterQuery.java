@@ -16,12 +16,12 @@ public class MeterListFilterQuery {
 		
 		MeterList ml=new MeterList();
 		String tok=ml.postToken("10335348806483","sur81113T1713_stb","abc@123");
-		System.out.println(ml.getMetersResponseList(tok, "/v2/meters"));
-		System.out.println("***********************");
+		//System.out.println(ml.getMetersResponseList(tok, "/v2/meters"));
+		//System.out.println("***********************");
 		MeterListFilterVerification mlfv=new MeterListFilterVerification(); 
 		List<String >l=mlfv.getListOfFields(ml.getMetersResponseList(tok, "/v2/meters/"), "name");
-		System.out.println("(((((((((((((())))))))))))))))))))");
-		System.out.println(l);
+		//System.out.println("(((((((((((((())))))))))))))))))))");
+		//System.out.println(l);
 		MeterListVerification a=new MeterListVerification();
 		for(String s:l){
 			String bob="/v2/meters/"+s+query;

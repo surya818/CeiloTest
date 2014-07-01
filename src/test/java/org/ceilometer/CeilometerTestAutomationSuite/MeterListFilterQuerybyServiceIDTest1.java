@@ -78,14 +78,14 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 		 
 	  }
 	  
-	System.out.println("Success: serviceIdFilterQueryResponseAssertionTest");  
+	//System.out.println("Success: serviceIdFilterQueryResponseAssertionTest");  
   }
   
   @Test
   public void serviceIdFilterQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
-		 // System.out.println(meterValues.size());
+		 // //System.out.println(meterValues.size());
 		  
 		  
 		  
@@ -107,14 +107,14 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 		 
 	  }
 	  
-	System.out.println("Success: serviceIdFilterQueryResponseAllJSONfieldsExist");  
+	//System.out.println("Success: serviceIdFilterQueryResponseAllJSONfieldsExist");  
   }
   
   @Test
   public void serviceIdFilterQueryResponseVerifyserviceIdValue() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
-		 // System.out.println(meterValues.size());
+		 // //System.out.println(meterValues.size());
 		  
 		  
 		  
@@ -128,7 +128,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 			
 			  String finalResourcePath="/v2/meters/"+meter+query;
 			  List<String> service_id_vals=mlfs.getServicesList(at, finalResourcePath);
-			  System.out.println(service_id_vals);
+			  //System.out.println(service_id_vals);
 			  Assert.assertTrue(service_id_vals.contains(outer_service.get(service_id_counter++)));
 			  
 			  
@@ -137,7 +137,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 		 
 	  }
 	  
-	System.out.println("Success: serviceIdFilterQueryResponseAllJSONfieldsExist");  
+	//System.out.println("Success: serviceIdFilterQueryResponseAllJSONfieldsExist");  
   }
   
   /*
@@ -154,7 +154,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 			  String query=mlq.genQuery("service_id", "eq", serviceIdValues.get(service_id_counter++));
 			  
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			  //System.out.println("*****???"+finalResourcePath);
+			  ////System.out.println("*****???"+finalResourcePath);
 			  Assert.assertTrue(mlver.allJSONfieldsExist(at, finalResourcePath));
 			  
 			  
@@ -162,7 +162,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 		  
 		 
 	  }
-	  System.out.println("Success: serviceIdFilterQueryResponseAllJSONfieldsExist");  
+	  //System.out.println("Success: serviceIdFilterQueryResponseAllJSONfieldsExist");  
   }
   
   @Test
@@ -179,9 +179,9 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 			  String query=mlq.genQuery("service_id", "eq", serviceIdValues.get(service_id_counter));
 			  
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			  //System.out.println(ml.getMetersResponseList(at, finalResourcePath));
+			  ////System.out.println(ml.getMetersResponseList(at, finalResourcePath));
 			  List<String> service_id_vals=ml.getJSONFieldValues(at,finalResourcePath,"service_id");
-			  //System.out.println(service_id_vals);
+			  ////System.out.println(service_id_vals);
 			  Assert.assertTrue(service_id_vals.contains(serviceIdValues.get(service_id_counter)));
 			  service_id_counter++;
 			  
@@ -193,7 +193,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 	  }
 	  
 	  
-	  System.out.println("Success: serviceIdFilterQueryVerifyserviceIdValue");    
+	  //System.out.println("Success: serviceIdFilterQueryVerifyserviceIdValue");    
 	  
   }
   

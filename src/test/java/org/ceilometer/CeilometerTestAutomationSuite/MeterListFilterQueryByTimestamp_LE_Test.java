@@ -73,7 +73,7 @@ public class MeterListFilterQueryByTimestamp_LE_Test {
 		 
 	  }
 	  
-	System.out.println("Success: timeStampFilterLessThanOrEqualToQueryResponseAssertion");  
+	//System.out.println("Success: timeStampFilterLessThanOrEqualToQueryResponseAssertion");  
   }
   @Test
   public void timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException, java.text.ParseException{
@@ -90,11 +90,11 @@ public class MeterListFilterQueryByTimestamp_LE_Test {
 		  for(String meter:meterValues){
 			  String curr_date=timeStampValues.get(timeStamp_counter++);
 			  String new_date=tsg.changeDateByDays(curr_date,1);
-			  //System.out.println("<<<<<<<<>>>>> "+new_date );
+			  ////System.out.println("<<<<<<<<>>>>> "+new_date );
 			  String query=mlq.genQuery("timestamp", "le", new_date);
 			  
 			  String finalResourcePath="/v2/meters/"+meter+query;
-			 // System.out.println(ml.getMetersResponseList(at, finalResourcePath));
+			 // //System.out.println(ml.getMetersResponseList(at, finalResourcePath));
 			  int num=ml.getMetersStatus(at, finalResourcePath);
 			  Assert.assertTrue(mlver.allJSONfieldsExist(at, finalResourcePath));
 			  
@@ -104,7 +104,7 @@ public class MeterListFilterQueryByTimestamp_LE_Test {
 		  
 		 
 	  }
-	  System.out.println("Success: timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist");  
+	  //System.out.println("Success: timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist");  
   }
   
  /* @Test
@@ -127,7 +127,7 @@ public class MeterListFilterQueryByTimestamp_LE_Test {
 			  String finalResourcePath="/v2/meters/"+meter+query;
 			  
 			  List<String> timestamp_vals=ml.getJSONFieldValues(at,finalResourcePath,"timestamp");
-			  //System.out.println(timestamp_vals);
+			  ////System.out.println(timestamp_vals);
 			  Assert.assertTrue(timestamp_vals.contains(timeStampValues.get(timeStamp_counter)));
 			  timeStamp_counter++;
 			  
@@ -139,7 +139,7 @@ public class MeterListFilterQueryByTimestamp_LE_Test {
 	  }
 	  
 	  
-	  System.out.println("Success: timeStampFilterLessThanOrEqualToQueryResponseVerifyTimeStampValue");    
+	  //System.out.println("Success: timeStampFilterLessThanOrEqualToQueryResponseVerifyTimeStampValue");    
 	  
   }
   /*/

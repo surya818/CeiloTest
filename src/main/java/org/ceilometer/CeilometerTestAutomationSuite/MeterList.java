@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -33,14 +34,35 @@ import com.sun.jersey.api.client.WebResource;
 public class MeterList {
 	
 	public static void main(String[]args) throws FileNotFoundException, IOException, ParseException, ValueNotFoundException{
-		
+		/*
 		MeterList ml=new MeterList();
+		String tok=postToken("10227194874364","glancetest","abc@123");
+		System.out.println("*****************************************************");
+		ClientResponse cl=ml.getMetersResponse(tok, "/v2/meters");
+		//System.out.println(cl.getStatus());
+		InputStreamReader isr=new InputStreamReader(cl.getEntityInputStream());
+		JSONParser jp=new JSONParser();
+		ContainerFactory cf=new ContainerFactory() {
+			
+			public Map createObjectContainer() {
+				// TODO Auto-generated method stub
+				return new HashMap();
+			}
+			
+			public List creatArrayContainer() {
+				// TODO Auto-generated method stub
+				return new ArrayList();
+			}
+		};
+		ArrayList al=(ArrayList) jp.parse(isr, cf);
+		System.out.println(al);
+		System.out.println("*****************************************************");
 		List l=ml.getMetersResponseList((postToken("10227194874364","glancetest","abc@123")),"/v2/meters/storage.objects.cdn.outgoing.gb?q.field=timestamp&q.op=le&q.value=2014-05-03T12:00:00");
 		MeterListFilterVerification mlfv=new MeterListFilterVerification();
 		System.out.println(mlfv.getListOfFields(l, "timestamp"));
 		System.out.println("Size: "+l.size()  );
 		
-		/*
+		
 		MeterList ml=new MeterList();
 		//System.out.println(ml.getMeters("HPAuth10_bfafb1254b374c9685c090d55c6dcc25c7878597272f28855cbb481e716eae8a"));
 		
@@ -185,7 +207,7 @@ public class MeterList {
 		l=(LinkedList<LinkedHashMap>)jp.parse(isr, cf);
 		}
 		catch(ClassCastException ce){
-			System.out.println("Exception in MeterList.getMetersResponseList method: Invalid tenant details");
+			System.out.println("Exception in MeterList.getMetersResponseList method: Returned HTTP code "+response.getStatus());
 		}
 		return l;
 		

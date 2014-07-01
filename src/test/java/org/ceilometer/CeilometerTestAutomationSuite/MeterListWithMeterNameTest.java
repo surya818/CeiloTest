@@ -48,7 +48,7 @@ public class MeterListWithMeterNameTest {
   public void meterListWithMeterNameResponseAssertionTest() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
-		  //System.out.println(meterValues)
+		  ////System.out.println(meterValues)
 		  for(String meter:meterValues){
 			  
 			  String finalResourcePath="/v2/meters/"+meter;
@@ -62,13 +62,13 @@ public class MeterListWithMeterNameTest {
 		 
 	  }
 	  
-	System.out.println("Success: meterListWithMeterNameResponseAssertionTest");  
+	//System.out.println("Success: meterListWithMeterNameResponseAssertionTest");  
   }
   @Test(dependsOnMethods={"meterListWithMeterNameResponseAssertionTest"})
   public void meterListWithMeterNameAllJSONFieldsExistTest() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
-		  //System.out.println(meterValues)
+		  ////System.out.println(meterValues)
 		  for(String meter:meterValues){
 			  
 			  String finalResourcePath="/v2/meters/"+meter;
@@ -82,7 +82,7 @@ public class MeterListWithMeterNameTest {
 		 
 	  }
 	  
-	System.out.println("Success: meterListWithMeterNameallFiledsExistTest");  
+	//System.out.println("Success: meterListWithMeterNameallFiledsExistTest");  
   }
   @Test(dependsOnMethods={"meterListWithMeterNameResponseAssertionTest"})
   public void meterListWithMeterNameVerifyMeterNameTest() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
@@ -90,12 +90,12 @@ public class MeterListWithMeterNameTest {
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
 		  
 		  for(String meter:meterValues){
-			  //System.out.println(meter);
+			  ////System.out.println(meter);
 			  
 			  String finalResourcePath="/v2/meters/"+meter;
-			  System.out.println(ml.getMetersResponseList(at, finalResourcePath));
+			  //System.out.println(ml.getMetersResponseList(at, finalResourcePath));
 			  List<String> metersList=ml.getJSONFieldValues(at, finalResourcePath, "counter_name");
-			  //System.out.println(metersList);
+			  ////System.out.println(metersList);
 			  Assert.assertTrue(metersList.contains(meter));
 			  
 			 
@@ -107,7 +107,7 @@ public class MeterListWithMeterNameTest {
 		 
 	  }
 	  
-	System.out.println("Success: meterListWithMeterNameVerifyMeterNameTest");  
+	//System.out.println("Success: meterListWithMeterNameVerifyMeterNameTest");  
   }
 
 	
