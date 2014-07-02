@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="3" time="21.671" errors="0" skipped="32" tests="36" name="TestSuite">
+<testsuite failures="2" time="402.263" errors="0" skipped="1" tests="36" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin"/>
+    <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.7.0_45\jre\bin"/>
     <property name="java.vm.version" value="24.45-b08"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -14,13 +14,13 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite"/>
+    <property name="user.dir" value="c:\tests_0702\CeilometerRESTAPITestAutomation"/>
     <property name="java.runtime.version" value="1.7.0_45-b18"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="basedir" value="C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\endorsed"/>
+    <property name="basedir" value="c:\tests_0702\CeilometerRESTAPITestAutomation"/>
+    <property name="java.endorsed.dirs" value="c:\Program Files\Java\jdk1.7.0_45\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\surefire\surefirebooter2359713183754165087.jar"/>
+    <property name="surefire.real.class.path" value="c:\tests_0702\CeilometerRESTAPITestAutomation\target\surefire\surefirebooter387702233326034326.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\rekhasu\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -28,8 +28,8 @@
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jre7/bin/client;C:/Program Files (x86)/Java/jre7/bin;C:/Program Files (x86)/Java/jre7/lib/i386;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Python27;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files (x86)\OpenSSH\bin;C:\Maven\apache-maven-3.2.1\bin;C:\Eclipse\eclipse;;."/>
-    <property name="surefire.test.class.path" value="C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\test-classes;C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\classes;C:\Users\rekhasu\.m2\repository\org\testng\testng\6.8.7\testng-6.8.7.jar;C:\Users\rekhasu\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\rekhasu\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\rekhasu\.m2\repository\org\yaml\snakeyaml\1.12\snakeyaml-1.12.jar;C:\Users\rekhasu\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-client\1.18.1\jersey-client-1.18.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-core\1.18.1\jersey-core-1.18.1.jar;C:\Users\rekhasu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.library.path" value="c:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\rekhasu\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;c:\Program Files\RA2HP\;c:\Windows\system32;c:\Windows;c:\Windows\System32\Wbem;c:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\ActivIdentity\ActivClient\;c:\Program Files (x86)\ActivIdentity\ActivClient\;c:\Python27;c:\Program Files\Java\jdk1.7.0_45\bin;c:\Program Files (x86)\OpenSSH\bin;c:\Maven\apache-maven-3.2.1\bin;."/>
+    <property name="surefire.test.class.path" value="c:\tests_0702\CeilometerRESTAPITestAutomation\target\test-classes;c:\tests_0702\CeilometerRESTAPITestAutomation\target\classes;C:\Users\rekhasu\.m2\repository\org\testng\testng\6.8.7\testng-6.8.7.jar;C:\Users\rekhasu\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\rekhasu\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\rekhasu\.m2\repository\org\yaml\snakeyaml\1.12\snakeyaml-1.12.jar;C:\Users\rekhasu\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-client\1.18.1\jersey-client-1.18.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-core\1.18.1\jersey-core-1.18.1.jar;C:\Users\rekhasu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -40,18 +40,18 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="rekhasu"/>
-    <property name="java.class.path" value="C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\test-classes;C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\classes;C:\Users\rekhasu\.m2\repository\org\testng\testng\6.8.7\testng-6.8.7.jar;C:\Users\rekhasu\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\rekhasu\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\rekhasu\.m2\repository\org\yaml\snakeyaml\1.12\snakeyaml-1.12.jar;C:\Users\rekhasu\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-client\1.18.1\jersey-client-1.18.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-core\1.18.1\jersey-core-1.18.1.jar;C:\Users\rekhasu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.class.path" value="c:\tests_0702\CeilometerRESTAPITestAutomation\target\test-classes;c:\tests_0702\CeilometerRESTAPITestAutomation\target\classes;C:\Users\rekhasu\.m2\repository\org\testng\testng\6.8.7\testng-6.8.7.jar;C:\Users\rekhasu\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\rekhasu\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\rekhasu\.m2\repository\org\yaml\snakeyaml\1.12\snakeyaml-1.12.jar;C:\Users\rekhasu\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-client\1.18.1\jersey-client-1.18.1.jar;C:\Users\rekhasu\.m2\repository\com\sun\jersey\jersey-core\1.18.1\jersey-core-1.18.1.jar;C:\Users\rekhasu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_45\jre"/>
-    <property name="sun.java.command" value="C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\surefire\surefirebooter2359713183754165087.jar C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\surefire\surefire3664976620904167071tmp C:\Users\rekhasu\workspace\CeilometerTestAutomationSuite\target\surefire\surefire7833762938256835500tmp"/>
+    <property name="java.home" value="c:\Program Files\Java\jdk1.7.0_45\jre"/>
+    <property name="sun.java.command" value="c:\tests_0702\CeilometerRESTAPITestAutomation\target\surefire\surefirebooter387702233326034326.jar c:\tests_0702\CeilometerRESTAPITestAutomation\target\surefire\surefire7390246331532484614tmp c:\tests_0702\CeilometerRESTAPITestAutomation\target\surefire\surefire3404720029897213964tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.7.0_45"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_45\jre\classes"/>
+    <property name="java.ext.dirs" value="c:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="c:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar;c:\Program Files\Java\jdk1.7.0_45\jre\lib\rt.jar;c:\Program Files\Java\jdk1.7.0_45\jre\lib\sunrsasign.jar;c:\Program Files\Java\jdk1.7.0_45\jre\lib\jsse.jar;c:\Program Files\Java\jdk1.7.0_45\jre\lib\jce.jar;c:\Program Files\Java\jdk1.7.0_45\jre\lib\charsets.jar;c:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar;c:\Program Files\Java\jdk1.7.0_45\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="localRepository" value="C:\Users\rekhasu\.m2\repository"/>
     <property name="file.separator" value="\"/>
@@ -61,138 +61,58 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="1.884" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="meterListResponseJSONObjectsExist">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields.meterListResponseJSONObjectsExist(MeterListFilterWithFields.java:31)
-</failure>
-    <system-out>@HL
-@HL-------------------------------------------------------
-@HL T E S T S
-@HL-------------------------------------------------------
-@SLRunning TestSuite
-Exception in MeterList.getMetersResponseList method: Returned HTTP code 500
-</system-out>
-  </testcase>
-  <testcase time="1.231" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="meterListResponseJSONObjectsExist">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest.meterListResponseJSONObjectsExist(MeterListFilterWithFieldsTest.java:31)
-</failure>
-    <system-out>Exception in MeterList.getMetersResponseList method: Returned HTTP code 500
-</system-out>
-  </testcase>
-  <testcase time="1.268" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest" name="verifyGetMetersResponseCode">
-    <failure message="expected [200] but found [500]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [500]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:370)
-	at org.testng.Assert.assertEquals(Assert.java:380)
-	at org.ceilometer.CeilometerTestAutomationSuite.MeterListTest.verifyGetMetersResponseCode(MeterListTest.java:63)
+  <testcase time="3.691" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest" name="verifyGetMetersResponseCode"/>
+  <testcase time="1.041" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1" name="invalidTokenGetMetersResponseCode"/>
+  <testcase time="13.506" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" name="userIdFilterQueryResponseAllJSONfieldsExist"/>
+  <testcase time="10.478" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" name="userIdFilterQueryResponseAssertionTest"/>
+  <testcase time="15.946" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" name="userIdFilterQueryVerifyuserIdValue"/>
+  <testcase time="13.483" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" name="projectIdFilterQueryTestResponseAssertionTest"/>
+  <testcase time="10.196" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" name="serviceIdFilterQueryResponseAllJSONfieldsExist"/>
+  <testcase time="10.101" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" name="serviceIdFilterQueryResponseAssertionTest"/>
+  <testcase time="13.559" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" name="serviceIdFilterQueryResponseVerifyserviceIdValue"/>
+  <testcase time="6.947" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test" name="timeStampFilterEqualsToQueryResponseAssertion">
+    <failure message="expected:&lt;400&gt; but was:&lt;200&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;400&gt; but was:&lt;200&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test.timeStampFilterEqualsToQueryResponseAssertion(MeterListFilterQueryByTimestamp_EQ_Test.java:68)
 </failure>
   </testcase>
-  <testcase time="1.181" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1" name="invalidTokenGetMetersResponseCode"/>
-  <testcase time="1.886" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" name="userIdFilterQueryResponseAllJSONfieldsExist">
+  <testcase time="31.176" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test" name="timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist"/>
+  <testcase time="19.443" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test" name="timeStampFilterGreaterThanOrEqualToQueryResponseAssertion"/>
+  <testcase time="26.417" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test" name="timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist"/>
+  <testcase time="15.093" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test" name="timeStampFilterGreaterThanQueryResponseAssertion"/>
+  <testcase time="19.408" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test" name="timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist"/>
+  <testcase time="13.677" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test" name="timeStampFilterLessThanOrEqualToQueryResponseAssertion"/>
+  <testcase time="23.549" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test" name="timeStampFilterLessThanQueryResponseAllJSONfieldsExist"/>
+  <testcase time="16.151" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test" name="timeStampFilterLessThanQueryResponseAssertion"/>
+  <testcase time="1.585" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="meterListResponseJSONObjectsExist"/>
+  <testcase time="0.998" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="validateMeterListResponseJSONFields"/>
+  <testcase time="11.303" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="verifyMeterListFilterWithMeterIdAllJSONFieldsExist"/>
+  <testcase time="9.331" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="verifyMeterListFilterWithMeterIdResponseCode"/>
+  <testcase time="1.824" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="meterListResponseJSONObjectsExist"/>
+  <testcase time="0.973" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="validateMeterListResponseJSONFields"/>
+  <testcase time="9.677" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="verifyMeterListFilterWithMeterIdAllJSONFieldsExist"/>
+  <testcase time="11.275" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="verifyMeterListFilterWithMeterIdResponseCode"/>
+  <testcase time="1.547" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest" name="invalidTokenGetMetersResponseCode"/>
+  <testcase time="2.439" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1" name="verifyGetMetersResponseCode"/>
+  <testcase time="1.67" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest" name="meterListResponseJSONObjectsExist"/>
+  <testcase time="0.991" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest" name="validateMeterListResponseJSONFields"/>
+  <testcase time="10.163" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" name="meterListWithMeterNameResponseAssertionTest"/>
+  <testcase time="11.14" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" name="projectIdFilterQueryResponseAllJSONfieldsExist"/>
+  <testcase time="7.716" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" name="projectIdFilterQueryVerifyProjectIdValue"/>
+  <testcase time="7.717" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test" name="timeStampFilterEqualsToQueryResponseAllJSONfieldsExist">
     <skipped/>
   </testcase>
-  <testcase time="1.886" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" name="userIdFilterQueryResponseAssertionTest">
-    <skipped/>
-  </testcase>
-  <testcase time="1.887" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest" name="userIdFilterQueryVerifyuserIdValue">
-    <skipped/>
-  </testcase>
-  <testcase time="2.541" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" name="projectIdFilterQueryTestResponseAssertionTest">
-    <skipped/>
-  </testcase>
-  <testcase time="3.198" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" name="serviceIdFilterQueryResponseAllJSONfieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="3.199" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" name="serviceIdFilterQueryResponseAssertionTest">
-    <skipped/>
-  </testcase>
-  <testcase time="3.199" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQuerybyServiceIDTest1" name="serviceIdFilterQueryResponseVerifyserviceIdValue">
-    <skipped/>
-  </testcase>
-  <testcase time="3.833" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test" name="timeStampFilterEqualsToQueryResponseAssertion">
-    <skipped/>
-  </testcase>
-  <testcase time="4.496" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test" name="timeStampFilterGreaterThanOrEqualToQueryResponseAllJSONfieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="4.496" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test" name="timeStampFilterGreaterThanOrEqualToQueryResponseAssertion">
-    <skipped/>
-  </testcase>
-  <testcase time="5.188" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test" name="timeStampFilterGreaterThanQueryResponseAllJSONfieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="5.189" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test" name="timeStampFilterGreaterThanQueryResponseAssertion">
-    <skipped/>
-  </testcase>
-  <testcase time="5.849" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test" name="timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="5.849" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test" name="timeStampFilterLessThanOrEqualToQueryResponseAssertion">
-    <skipped/>
-  </testcase>
-  <testcase time="6.595" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test" name="timeStampFilterLessThanQueryResponseAllJSONfieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="6.595" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LT_Test" name="timeStampFilterLessThanQueryResponseAssertion">
-    <skipped/>
-  </testcase>
-  <testcase time="6.596" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="validateMeterListResponseJSONFields">
-    <skipped/>
-  </testcase>
-  <testcase time="6.596" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="verifyMeterListFilterWithMeterIdAllJSONFieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="6.596" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields" name="verifyMeterListFilterWithMeterIdResponseCode">
-    <skipped/>
-  </testcase>
-  <testcase time="6.596" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="validateMeterListResponseJSONFields">
-    <skipped/>
-  </testcase>
-  <testcase time="6.597" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="verifyMeterListFilterWithMeterIdAllJSONFieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="6.597" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest" name="verifyMeterListFilterWithMeterIdResponseCode">
-    <skipped/>
-  </testcase>
-  <testcase time="6.597" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest" name="invalidTokenGetMetersResponseCode">
-    <skipped/>
-  </testcase>
-  <testcase time="6.597" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1" name="verifyGetMetersResponseCode">
-    <skipped/>
-  </testcase>
-  <testcase time="7.264" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest" name="meterListResponseJSONObjectsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="7.264" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListValidatorTest" name="validateMeterListResponseJSONFields">
-    <skipped/>
-  </testcase>
-  <testcase time="7.911" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" name="meterListWithMeterNameResponseAssertionTest">
-    <skipped/>
-  </testcase>
-  <testcase time="7.912" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" name="projectIdFilterQueryResponseAllJSONfieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="7.913" classname="org.ceilometer.CeilometerTestAutomationSuite.FilterQueryProjectIDTest" name="projectIdFilterQueryVerifyProjectIdValue">
-    <skipped/>
-  </testcase>
-  <testcase time="7.914" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test" name="timeStampFilterEqualsToQueryResponseAllJSONfieldsExist">
-    <skipped/>
-  </testcase>
-  <testcase time="7.915" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" name="meterListWithMeterNameAllJSONFieldsExistTest">
-    <skipped/>
-  </testcase>
-  <testcase time="7.916" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" name="meterListWithMeterNameVerifyMeterNameTest">
-    <skipped/>
+  <testcase time="6.482" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" name="meterListWithMeterNameAllJSONFieldsExistTest"/>
+  <testcase time="5.864" classname="org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest" name="meterListWithMeterNameVerifyMeterNameTest">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:48)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest.meterListWithMeterNameVerifyMeterNameTest(MeterListWithMeterNameTest.java:99)
+</failure>
   </testcase>
 </testsuite>

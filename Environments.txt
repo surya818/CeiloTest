@@ -1,9 +1,1 @@
---> For your reference only
-###RNDE
-IDENTITY_SERVER= https://csnode.rnde.aw1.hpcloud.net:35357/
-REPORTING_SERVER=https://mb-aw1rde1-reporting0000.rnde.aw1.hpcloud.net:8777
-#######
-###STB
-IDENTITY_SERVER= https://csnode.systestb.hpcloud.net:35357/
-REPORTING_SERVER=https://mb-stbaz1-reporting0000.systestb.hpcloud.net:8777
-#######
+<Deleted Data for security>
