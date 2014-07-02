@@ -55,7 +55,7 @@ public void setUp() throws IOException{
 	
 }
 	
-	@Test
+	@Test(dependsOnGroups={"v2-meters-basic"})
 	public void verifyGetMetersResponseCode() throws Exception{
 		
 		for(int i=0;i<tokensList.size();i++){

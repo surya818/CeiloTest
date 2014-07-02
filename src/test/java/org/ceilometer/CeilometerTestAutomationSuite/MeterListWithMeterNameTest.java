@@ -44,7 +44,7 @@ public class MeterListWithMeterNameTest {
   @AfterClass
   public void afterClass() {
   }
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void meterListWithMeterNameResponseAssertionTest() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");

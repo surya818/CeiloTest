@@ -55,7 +55,7 @@ public void setUp() throws IOException{
 	
 }
 	
-	@Test
+	@Test(groups = { "v2-meters-basic" })
 	public void verifyGetMetersResponseCode() throws Exception{
 		
 		for(int i=0;i<tokensList.size();i++){
@@ -68,7 +68,7 @@ public void setUp() throws IOException{
 	//System.out.println("Success: verifyGetMetersResponseCode");
 	}
 	
-	@Test
+	@Test(dependsOnGroups={"v2-meters-basic"})
 	public void invalidTokenGetMetersResponseCode() throws Exception{
 		
 			int stat_code=mr.getMetersStatus(tokensList.get(0)+"a","/v2/meters/");

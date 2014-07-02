@@ -47,7 +47,7 @@ public class MeterListFilterQueryByTimestamp_LE_Test {
   public void afterClass() throws Throwable {
 	  super.finalize();
   }
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void timeStampFilterLessThanOrEqualToQueryResponseAssertion() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException, java.text.ParseException{
 	  List<String> timeStampValues=null;
 	  for(String at:tokensList){
@@ -75,7 +75,7 @@ public class MeterListFilterQueryByTimestamp_LE_Test {
 	  
 	//System.out.println("Success: timeStampFilterLessThanOrEqualToQueryResponseAssertion");  
   }
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException, java.text.ParseException{
 	  
 	  List<String> timeStampValues=null;

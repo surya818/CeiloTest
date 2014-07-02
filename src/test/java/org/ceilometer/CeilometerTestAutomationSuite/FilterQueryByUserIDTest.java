@@ -46,7 +46,7 @@ public class FilterQueryByUserIDTest {
   @AfterClass
   public void afterClass() {
   }
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void userIdFilterQueryResponseAssertionTest() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
@@ -73,7 +73,7 @@ public class FilterQueryByUserIDTest {
 	  
 	//System.out.println("Success: userIdFilterQueryResponseAssertionTest");  
   }
-  @Test(dependsOnMethods={"userIdFilterQueryResponseAssertionTest"})
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void userIdFilterQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  
 	  for(String at:tokensList){
@@ -97,7 +97,7 @@ public class FilterQueryByUserIDTest {
 	  //System.out.println("Success: userIdFilterQueryResponseAllJSONfieldsExist");  
   }
   
-  @Test(dependsOnMethods={"userIdFilterQueryResponseAssertionTest"})
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void userIdFilterQueryVerifyuserIdValue() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  
 	  for(String at:tokensList){

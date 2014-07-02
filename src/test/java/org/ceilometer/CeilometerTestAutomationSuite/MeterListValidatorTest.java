@@ -20,7 +20,7 @@ public class MeterListValidatorTest {
 	List<String> tokensList;
 	
 	
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void meterListResponseJSONObjectsExist() throws IOException, ParseException {
 	  for(String authToken:tokensList){
 	  int size=mlv.meterListSize(authToken,"/v2/meters/");
@@ -28,10 +28,10 @@ public class MeterListValidatorTest {
 	  Assert.assertTrue(size>0);
 	  }
 	  
-	  System.out.println("Success: meterListResponseJSONObjectsExist");
+	  //System.out.println("Success: meterListResponseJSONObjectsExist");
 	  
   }
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void validateMeterListResponseJSONFields() throws FileNotFoundException, IOException, ParseException{
 	  for(String authToken:tokensList){
 	  List<Boolean> list=mlv.verifyTenant(authToken,"/v2/meters/");
@@ -40,7 +40,7 @@ public class MeterListValidatorTest {
 		  Assert.assertTrue(boo);
 	  }
 	  }
-	  System.out.println("Success: validateMeterListResponseJSONFields");
+	  //System.out.println("Success: validateMeterListResponseJSONFields");
   }
   @BeforeClass
   public void beforeClass() throws IOException {

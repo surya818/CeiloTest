@@ -47,7 +47,7 @@ public class MeterListFilterQueryByTimestamp_EQ_Test {
   public void afterClass() throws Throwable {
 	  super.finalize();
   }
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void timeStampFilterEqualsToQueryResponseAssertion() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException, java.text.ParseException{
 	  List<String> timeStampValues=null;
 	  for(String at:tokensList){

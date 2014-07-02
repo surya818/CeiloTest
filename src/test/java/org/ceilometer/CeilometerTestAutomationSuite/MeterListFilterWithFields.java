@@ -23,7 +23,7 @@ public class MeterListFilterWithFields {
 	
 	
 	
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void meterListResponseJSONObjectsExist() throws IOException, ParseException {
 	  for(String authToken:tokensList){
 	  int size=mlv.meterListSize(authToken,"/v2/meters/");
@@ -34,7 +34,7 @@ public class MeterListFilterWithFields {
 	  
 	  
   }
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void validateMeterListResponseJSONFields() throws FileNotFoundException, IOException, ParseException{
 	  for(String authToken:tokensList){
 		  
@@ -59,7 +59,7 @@ public class MeterListFilterWithFields {
 	  }
   }
   
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void verifyMeterListFilterWithMeterIdResponseCode() throws FileNotFoundException, IOException, ParseException{
   	for(String authToken:tokensList){
   		List <String>JSONMeterIdValues=ml.getJSONFieldValues(authToken, "/v2/meters", "meter_id");
@@ -73,9 +73,9 @@ public class MeterListFilterWithFields {
   		  }
   		  
   		  }
-  	System.out.println("Success: verifyMeterListFilterWithMeterIdResponseCode");
+  	//System.out.println("Success: verifyMeterListFilterWithMeterIdResponseCode");
   }
-@Test
+@Test(dependsOnGroups={"v2-meters-basic"})
 public void verifyMeterListFilterWithMeterIdAllJSONFieldsExist() throws FileNotFoundException, IOException, ParseException{
 	for(String authToken:tokensList){
 		List <String>JSONMeterIdValues=ml.getJSONFieldValues(authToken, "/v2/meters", "meter_id");
@@ -93,7 +93,7 @@ public void verifyMeterListFilterWithMeterIdAllJSONFieldsExist() throws FileNotF
 		  }
 		  
 		  }
-	System.out.println("Success: verifyMeterListFilterWithMeterIdAllJSONFieldsExist");
+	//System.out.println("Success: verifyMeterListFilterWithMeterIdAllJSONFieldsExist");
 }
   @AfterClass
   public void afterClass() {

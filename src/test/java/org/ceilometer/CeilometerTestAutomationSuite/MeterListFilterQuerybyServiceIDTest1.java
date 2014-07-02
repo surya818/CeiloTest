@@ -52,7 +52,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
   }
   
   
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void serviceIdFilterQueryResponseAssertionTest() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
@@ -81,7 +81,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 	//System.out.println("Success: serviceIdFilterQueryResponseAssertionTest");  
   }
   
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void serviceIdFilterQueryResponseAllJSONfieldsExist() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");
@@ -110,7 +110,7 @@ public class MeterListFilterQuerybyServiceIDTest1 {
 	//System.out.println("Success: serviceIdFilterQueryResponseAllJSONfieldsExist");  
   }
   
-  @Test
+  @Test(dependsOnGroups={"v2-meters-basic"})
   public void serviceIdFilterQueryResponseVerifyserviceIdValue() throws FileNotFoundException, ValueNotFoundException, IOException, ParseException{
 	  for(String at:tokensList){
 		  List<String> meterValues=mlv.getListOfFields(ml.getMetersResponseList(at, "/v2/meters/"), "name");

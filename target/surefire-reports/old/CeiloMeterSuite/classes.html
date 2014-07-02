@@ -4,18 +4,26 @@
 <th>Method name</th>
 <th>Groups</th>
 </tr><tr>
-<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test</td>
+<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist</td>
+<td>validateMeterListResponseJSONFields</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>timeStampFilterLessThanOrEqualToQueryResponseAssertion</td>
+<td>meterListResponseJSONObjectsExist</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyMeterListFilterWithMeterIdResponseCode</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyMeterListFilterWithMeterIdAllJSONFieldsExist</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -118,6 +126,40 @@
 <td>afterClass</td>
 <td>&nbsp;</td></tr>
 <tr>
+<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>timeStampFilterEqualsToQueryResponseAssertion</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>timeStampFilterEqualsToQueryResponseAllJSONfieldsExist</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>beforeClass</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>afterClass</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td>org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GE_Test</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -152,25 +194,29 @@
 <td>afterClass</td>
 <td>&nbsp;</td></tr>
 <tr>
-<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test</td>
+<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListTest1</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>timeStampFilterEqualsToQueryResponseAssertion</td>
+<td>invalidTokenGetMetersResponseCode</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>timeStampFilterEqualsToQueryResponseAllJSONfieldsExist</td>
+<td>verifyGetMetersResponseCode</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>beforeClass</td>
+<td>init</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>setUp</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
@@ -181,10 +227,6 @@
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>afterClass</td>
-<td>&nbsp;</td></tr>
 <tr>
 <td>org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_GT_Test</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -291,40 +333,6 @@
 <td>&nbsp;</td>
 <td>afterClass</td>
 <td>&nbsp;</td></tr>
-<tr>
-<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListTest</td>
-<td>&nbsp;</td><td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@Test</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>invalidTokenGetMetersResponseCode</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>verifyGetMetersResponseCode</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeClass</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>init</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>setUp</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td align='center' colspan='3'>@BeforeMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterMethod</td>
-</tr>
-<tr>
-<td align='center' colspan='3'>@AfterClass</td>
-</tr>
 <tr>
 <td>org.ceilometer.CeilometerTestAutomationSuite.FilterQueryByUserIDTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -435,4 +443,73 @@
 <td>&nbsp;</td>
 <td>afterClass</td>
 <td>&nbsp;</td></tr>
+<tr>
+<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_LE_Test</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>timeStampFilterLessThanOrEqualToQueryResponseAllJSONfieldsExist</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>timeStampFilterLessThanOrEqualToQueryResponseAssertion</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>beforeClass</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>afterClass</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>org.ceilometer.CeilometerTestAutomationSuite.MeterListTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>invalidTokenGetMetersResponseCode</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyGetMetersResponseCode</td>
+<td>v2-meters-basic </td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>init</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>setUp</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
 </table>

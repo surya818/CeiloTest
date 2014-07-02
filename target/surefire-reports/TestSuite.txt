@@ -1,20 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 30, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 353.212 sec <<< FAILURE!
-timeStampFilterEqualsToQueryResponseAssertion(org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test)  Time elapsed: 6.987 sec  <<< FAILURE!
-junit.framework.AssertionFailedError: expected:<400> but was:<200>
-	at junit.framework.Assert.fail(Assert.java:50)
-	at junit.framework.Assert.failNotEquals(Assert.java:287)
-	at junit.framework.Assert.assertEquals(Assert.java:67)
-	at junit.framework.Assert.assertEquals(Assert.java:199)
-	at junit.framework.Assert.assertEquals(Assert.java:205)
-	at org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterQueryByTimestamp_EQ_Test.timeStampFilterEqualsToQueryResponseAssertion(MeterListFilterQueryByTimestamp_EQ_Test.java:68)
+Tests run: 36, Failures: 3, Errors: 0, Skipped: 32, Time elapsed: 21.672 sec <<< FAILURE!
+meterListResponseJSONObjectsExist(org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields)  Time elapsed: 1.883 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFields.meterListResponseJSONObjectsExist(MeterListFilterWithFields.java:31)
 
-meterListWithMeterNameVerifyMeterNameTest(org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest)  Time elapsed: 8.93 sec  <<< FAILURE!
-junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:48)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at org.ceilometer.CeilometerTestAutomationSuite.MeterListWithMeterNameTest.meterListWithMeterNameVerifyMeterNameTest(MeterListWithMeterNameTest.java:99)
+meterListResponseJSONObjectsExist(org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest)  Time elapsed: 1.23 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at org.ceilometer.CeilometerTestAutomationSuite.MeterListFilterWithFieldsTest.meterListResponseJSONObjectsExist(MeterListFilterWithFieldsTest.java:31)
+
+verifyGetMetersResponseCode(org.ceilometer.CeilometerTestAutomationSuite.MeterListTest)  Time elapsed: 1.267 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at org.ceilometer.CeilometerTestAutomationSuite.MeterListTest.verifyGetMetersResponseCode(MeterListTest.java:63)
 
